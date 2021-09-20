@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+table, th, td {
+  
+   	  border: 1px solid black;
+	  border-radius: 10px;
+	  padding: 10px;
+}
+
+div .container{
+	
+	margin-left: 300px;
+}
