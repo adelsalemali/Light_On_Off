@@ -11,8 +11,10 @@ private final String INSERT = "INSERT INTO room (room , country_id) values (?,?)
 	public void insertNewMebers(Memebers memebers) {  
 		
 		try
-		{
+		(
 			Connection con = DBMySQL.getConnection();
+			
+		){
 			PreparedStatement ps = con.prepareStatement(INSERT); 
 			
 			//Here we let user writes his group and his country
