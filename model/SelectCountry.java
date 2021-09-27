@@ -13,12 +13,13 @@ public class SelectCountry {
 	 public List<Memebers> selectCountry(){   
 		 
 		 List<Memebers> list  = new ArrayList<Memebers>();
-		 try { 
-			    
+		        try  (
+			    		
 				Connection con = DBMySQL.getConnection();
 				PreparedStatement ps1 = con.prepareStatement(select); 
 				ResultSet rs1 = ps1.executeQuery();
-				
+			    		
+			    ){
 				while(rs1.next()) {
 					 
 					
