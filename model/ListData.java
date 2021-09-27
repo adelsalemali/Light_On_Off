@@ -21,11 +21,14 @@ public class ListData {
 		//List of (members class) 
 		List<Memebers> list  = new 	ArrayList<Memebers>();
 		
-		try { 
+		try (
 			
 			Connection con = DBMySQL.getConnection();
 			PreparedStatement ps1 = con.prepareStatement(SelectBouth); 
 			ResultSet rs1 = ps1.executeQuery();	
+			
+			
+			){
 			System.out.println("List :"  + ps1);
 			System.out.println("ResultSet :"  + rs1);      
 			
